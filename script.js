@@ -5,9 +5,21 @@ function init () {
 
     // Put your code for the exercises here.
 
+    button.addEventListener("mouseover", function (e) {
+
+        button.style.backgroundColor = "lightblue";
+
+    });
+
+    button.addEventListener("mouseleave", function (e) {
+
+        button.style.backgroundColor = "";
+
+    });
+
     button.addEventListener("click", function(event) {
 
-        paragraph.innerHTML = "Houston, we have liftoff!";
+        paragraph.innerHTML = "Houston, we have lift off!";
               
     });
 
