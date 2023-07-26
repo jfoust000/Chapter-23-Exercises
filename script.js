@@ -22,6 +22,18 @@ function init () {
         missionAbort.style.backgroundColor = "";
 
     });
+
+    missionAbort.addEventListener("click", function(event) {
+
+       let choice = confirm("Are you sure you want to abort the mission?");
+
+       if (choice){
+
+            paragraph.innerHTML = "Mission aborted! Space shuttle returning home";
+            
+       }
+
+    });
     
             
 }
